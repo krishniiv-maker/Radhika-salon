@@ -1,0 +1,1102 @@
+/* =========================================================
+   RADHIKA'S SALON
+   SERVICE MENU
+   BLACK • GOLD • LUXURY
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --deep: #170f11;
+    --deep-soft: #1d1416;
+    --black: #100a0c;
+
+    --gold: #d5ae70;
+    --gold-light: #e3c58f;
+    --gold-dark: #a9824e;
+
+    --white: #fffaf5;
+
+    --muted: rgba(255,255,255,0.62);
+    --faint: rgba(255,255,255,0.38);
+
+    --gold-border: rgba(213,174,112,0.55);
+    --gold-soft: rgba(213,174,112,0.18);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background: var(--deep);
+
+    color: var(--white);
+
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.menu-navbar {
+    width: 100%;
+
+    padding: 20px 7%;
+
+    background: var(--deep);
+
+    border-bottom: 1px solid var(--gold-soft);
+}
+
+.nav-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-logo img {
+    width: 115px;
+
+    display: block;
+
+    filter: brightness(0) invert(1);
+
+    opacity: 0.92;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+
+    color: var(--gold-light);
+
+    transition: 0.3s ease;
+}
+
+.back-home span {
+    font-size: 16px;
+}
+
+.back-home:hover {
+    color: var(--white);
+}
+
+
+/* =========================================================
+   OFFER
+========================================================= */
+
+.offer-section {
+    padding: 45px 7% 0;
+
+    background: var(--deep);
+}
+
+.offer-card {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 28px 34px;
+
+    border: 1px solid var(--gold-border);
+
+    background: var(--deep-soft);
+
+    box-shadow:
+        0 0 0 1px rgba(213,174,112,0.05),
+        0 12px 35px rgba(0,0,0,0.25);
+}
+
+.offer-top {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid var(--gold-soft);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+.offer-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-top: 25px;
+}
+
+.offer-small {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--faint);
+}
+
+.offer-main h2 {
+    margin-top: 7px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(48px, 6vw, 75px);
+
+    font-weight: 400;
+
+    line-height: 0.85;
+
+    letter-spacing: -2px;
+}
+
+.offer-main h2 em {
+    color: var(--gold-light);
+
+    font-weight: 400;
+}
+
+.offer-description {
+    margin-top: 12px;
+
+    font-size: 11px;
+
+    color: var(--muted);
+}
+
+.offer-date {
+    padding-left: 25px;
+
+    border-left: 1px solid var(--gold-soft);
+}
+
+.offer-date span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
+
+    color: var(--faint);
+}
+
+.offer-date strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    color: var(--gold-light);
+}
+
+
+/* =========================================================
+   MENU AREA
+========================================================= */
+
+.menu-section {
+    padding: 100px 7% 120px;
+
+    background: var(--deep);
+}
+
+#menu-app,
+#app {
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.menu-page-heading {
+    margin-bottom: 48px;
+}
+
+.menu-page-eyebrow {
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 2.4px;
+
+    text-transform: uppercase;
+
+    color: var(--gold);
+}
+
+.menu-page-heading h2 {
+    margin-top: 22px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(62px, 8vw, 105px);
+
+    font-weight: 400;
+
+    line-height: 0.8;
+
+    letter-spacing: -3px;
+
+    color: var(--white);
+}
+
+.menu-page-heading h2 em {
+    color: var(--gold-light);
+
+    font-weight: 400;
+}
+
+.menu-page-heading p {
+    max-width: 420px;
+
+    margin-top: 25px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CATEGORY / SUBCATEGORY CARDS
+========================================================= */
+
+.service-card {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 105px;
+
+    margin-bottom: 14px;
+
+    padding: 22px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    cursor: pointer;
+
+    border: 1px solid var(--gold-border);
+
+    background: var(--deep-soft);
+
+    box-shadow:
+        0 0 12px rgba(213,174,112,0.045);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateX(5px);
+
+    background: #211719;
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 18px rgba(213,174,112,0.10);
+}
+
+.card-content {
+    min-width: 0;
+}
+
+.card-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 15px;
+
+    color: var(--gold);
+
+    opacity: 0.85;
+}
+
+.card-title {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 29px;
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+    color: var(--white);
+}
+
+.card-subtitle {
+    margin-top: 7px;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: var(--faint);
+}
+
+.arrow {
+    flex-shrink: 0;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--gold-border);
+
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    color: var(--gold);
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover .arrow {
+    background: var(--gold);
+
+    color: var(--deep);
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 48px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 9px;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+
+    color: var(--gold-light);
+
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--white);
+
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   SUBCATEGORY LIST
+========================================================= */
+
+.subcategory-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+.subcategory-list .service-card {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.service-list {
+    width: 100%;
+
+    border-top: 1px solid var(--gold-soft);
+}
+
+.service-row {
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    align-items: center;
+
+    min-height: 70px;
+
+    padding: 14px 10px;
+
+    border-bottom: 1px solid var(--gold-soft);
+
+    transition: 0.3s ease;
+}
+
+.service-row:hover {
+    padding-left: 17px;
+
+    background: rgba(213,174,112,0.035);
+}
+
+.service-number {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 15px;
+
+    color: var(--gold);
+
+    opacity: 0.8;
+}
+
+.service-name {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   HAIR TREATMENT NOTE
+========================================================= */
+
+.service-note {
+    margin-top: 28px;
+
+    padding: 22px 25px;
+
+    border-left: 1px solid var(--gold);
+
+    background: rgba(213,174,112,0.035);
+}
+
+.service-note strong {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    color: var(--gold-light);
+}
+
+.service-note p {
+    margin-top: 8px;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   BRIDAL / CUSTOM CONTACT
+========================================================= */
+
+.contact-service-block {
+    margin-top: 65px;
+
+    padding: 38px 40px;
+
+    border: 1px solid var(--gold-border);
+
+    background: var(--deep-soft);
+
+    box-shadow:
+        0 0 18px rgba(213,174,112,0.05);
+}
+
+.contact-label {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+.contact-service-block h3 {
+    margin-top: 14px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 36px;
+
+    font-weight: 500;
+}
+
+.contact-service-block p {
+    max-width: 550px;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+.contact-service-block a {
+    display: inline-flex;
+
+    margin-top: 22px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid var(--gold);
+
+    font-size: 9px;
+
+    letter-spacing: 1.8px;
+
+    color: var(--gold-light);
+
+    transition: 0.3s ease;
+}
+
+.contact-service-block a:hover {
+    letter-spacing: 2.2px;
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   REFER & EARN
+========================================================= */
+
+.refer-section {
+    padding: 0 7% 110px;
+
+    background: var(--deep);
+}
+
+.refer-inner {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr auto;
+
+    align-items: center;
+
+    gap: 35px;
+
+    border: 1px solid var(--gold-border);
+
+    background: var(--black);
+
+    box-shadow:
+        0 0 20px rgba(213,174,112,0.05);
+}
+
+.refer-number {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 36px;
+
+    color: var(--gold);
+}
+
+.refer-content h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(45px, 5vw, 68px);
+
+    font-weight: 400;
+
+    line-height: 0.85;
+
+    letter-spacing: -2px;
+}
+
+.refer-content h2 em {
+    color: var(--gold-light);
+}
+
+.refer-content p {
+    margin-top: 15px;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+.gold-outline-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px 20px;
+
+    border: 1px solid var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+
+    color: var(--gold-light);
+
+    transition: 0.3s ease;
+}
+
+.gold-outline-button:hover {
+    background: var(--gold);
+
+    color: var(--deep);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.menu-footer {
+    padding: 60px 7% 25px;
+
+    background: var(--black);
+
+    border-top: 1px solid var(--gold-soft);
+}
+
+.footer-main {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.footer-brand img {
+    width: 125px;
+
+    filter: brightness(0) invert(1);
+
+    opacity: 0.9;
+}
+
+.footer-brand p {
+    margin-top: 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    color: var(--faint);
+}
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 22px;
+}
+
+.footer-links a {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: var(--faint);
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--gold-light);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 50px auto 0;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--gold-soft);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    color: rgba(255,255,255,0.28);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .subcategory-list {
+        grid-template-columns: 1fr;
+    }
+
+    .refer-inner {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .gold-outline-button {
+        grid-column: 2;
+
+        justify-self: start;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .menu-navbar {
+        padding: 18px 6%;
+    }
+
+    .menu-logo img {
+        width: 100px;
+    }
+
+
+    /* OFFER */
+
+    .offer-section {
+        padding: 30px 6% 0;
+    }
+
+    .offer-card {
+        padding: 22px;
+    }
+
+    .offer-main {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .offer-main h2 {
+        font-size: 53px;
+    }
+
+    .offer-date {
+        width: 100%;
+
+        padding: 18px 0 0;
+
+        border-left: none;
+
+        border-top: 1px solid var(--gold-soft);
+    }
+
+
+    /* MENU */
+
+    .menu-section {
+        padding: 75px 6% 85px;
+    }
+
+    .menu-page-heading {
+        margin-bottom: 38px;
+    }
+
+    .menu-page-heading h2 {
+        font-size: 62px;
+
+        letter-spacing: -2px;
+    }
+
+    .menu-page-heading p {
+        font-size: 11px;
+    }
+
+
+    /* CARDS */
+
+    .service-card {
+        min-height: 88px;
+
+        padding: 18px 20px;
+
+        margin-bottom: 11px;
+    }
+
+    .card-number {
+        font-size: 13px;
+
+        margin-bottom: 4px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-subtitle {
+        font-size: 8px;
+    }
+
+    .arrow {
+        width: 30px;
+        height: 30px;
+
+        font-size: 14px;
+    }
+
+
+    /* SUBCATEGORY */
+
+    .subcategory-list {
+        gap: 11px;
+    }
+
+
+    /* SERVICES */
+
+    .back-btn {
+        margin-bottom: 38px;
+    }
+
+    .service-row {
+        grid-template-columns: 35px 1fr;
+
+        min-height: 62px;
+
+        padding: 12px 5px;
+    }
+
+    .service-number {
+        font-size: 13px;
+    }
+
+    .service-name {
+        font-size: 20px;
+    }
+
+
+    /* NOTE */
+
+    .service-note {
+        padding: 18px 18px;
+
+        margin-top: 22px;
+    }
+
+    .service-note strong {
+        font-size: 19px;
+    }
+
+    .service-note p {
+        font-size: 10px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-service-block {
+        margin-top: 45px;
+
+        padding: 28px 22px;
+    }
+
+    .contact-service-block h3 {
+        font-size: 29px;
+    }
+
+    .contact-service-block p {
+        font-size: 11px;
+    }
+
+
+    /* REFER */
+
+    .refer-section {
+        padding: 0 6% 75px;
+    }
+
+    .refer-inner {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 30px 23px;
+    }
+
+    .refer-number {
+        font-size: 28px;
+    }
+
+    .refer-content h2 {
+        font-size: 50px;
+    }
+
+    .gold-outline-button {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+
+    /* FOOTER */
+
+    .menu-footer {
+        padding: 50px 6% 22px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+
+        gap: 17px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 8px;
+
+        margin-top: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .menu-page-heading h2 {
+        font-size: 55px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .service-name {
+        font-size: 18px;
+    }
+
+    .offer-main h2 {
+        font-size: 48px;
+    }
+
+}
