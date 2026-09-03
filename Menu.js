@@ -536,7 +536,7 @@ function showHome() {
             </p>
 
             <a
-                href="${whatsappLink()}"
+                href="https://www.instagram.com/radhika16__/" 
                 target="_blank"
                 rel="noopener noreferrer"
             >
